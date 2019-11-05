@@ -1,6 +1,4 @@
 import React, {Component} from 'react';
-import Logo from '../../Images/LOGO.jpg'
-import './styles.css'
 
 
 class Header extends Component  {
@@ -9,7 +7,12 @@ class Header extends Component  {
       return(
         <div className="header">
         <nav className="menu-nav-header">
-        <img alt="logo-lbel" src={Logo} className="logo-nav"></img>
+        <div className="cont-logo">
+        </div>
+        <div className="menu-cart-user">
+        <button className="menu-btn cart"></button>
+        <button className="menu-btn user"></button>
+        </div>
         </nav>
       </div>
       )

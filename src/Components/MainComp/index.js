@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Header from '../Header';
-
+import Footer from '../Footer';
+import Products from '../Products';
 
 class MainComp extends Component  {
   
@@ -8,6 +9,8 @@ class MainComp extends Component  {
       return(
         <div className="main-component">
         <Header></Header>
+        <Products></Products>
+        <Footer></Footer>
       </div>
       )
   };

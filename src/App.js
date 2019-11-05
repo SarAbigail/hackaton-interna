@@ -4,7 +4,6 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import './App.css';
 import MainComp from './Components/MainComp';
 
 function App() {
