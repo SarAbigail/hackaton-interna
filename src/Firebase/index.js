@@ -15,15 +15,22 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-
 const db = firebase.firestore()
-const products = db.collection("productos").get().then((doc) =>{
-  doc.forEach(product =>console.log("DATA:", product.data()))
-}).catch((error) => {
-  console.log("ERROR:", error);
-}
 
-);
 
-  export {products}
+// const products = db.collection("productos").onSnapshot((doc) =>{
+//     doc.forEach(product =>prodObj.push(product.data()))
+//   });
+
+
+  // const products = callback => db.collection('productos')
+  // .onSnapshot((querySnapshot) => {
+  //   const postsArray = [];
+  //   querySnapshot.forEach((doc) => {
+  //     postsArray.push(doc);
+  //   });
+  //   callback(postsArray);
+  // });
+  
+export {db}
 
