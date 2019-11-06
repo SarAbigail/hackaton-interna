@@ -57,6 +57,8 @@ const Slider = () => {
     },
   ]
   return (
+    <React.Fragment>
+      <input className="rango" min="0" max="13" type="range"/>
     <div className="slider">
       <Gallery index={index} onRequestChange={i => {setIndex(i); }} >
         {images.map(img => (
@@ -64,6 +66,7 @@ const Slider = () => {
         ))}
       </Gallery>
     </div>
+    </React.Fragment>
   );
 }
 export default Slider;
