@@ -106,27 +106,26 @@ body, #root {
 /* HEADER END-------------------------------------------------------------- */
 /* PRODUCTS START-------------------------------------------------------------- */
 .products {
-  height: 3em;
-  width: 30%;
   min-width: 15em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #722282;
+  background-color: #000000;
   text-align: center;
   padding: 8px 0;
   position: absolute;
-  bottom: 5em;
+  bottom: 3em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 30px;
 }
-
+.btn-font{
+  font-weight:bolder ;
+  font-size: 1em;
+}
 .btn-products {
-  background-color: #772277;
+  background-color: #000000;
   color: #ffffff;
-  font-size: 20px;
 }
 
 .products-list {
@@ -136,7 +135,7 @@ body, #root {
 }
 
 .size {
-  height: 7em;
+  height: 3em;
 }
 
 .flex {
@@ -185,22 +184,17 @@ body, #root {
 
 .bg {
   background-color: #FFFFFF;
-  height: 11em;
-  width: 11em;
+  height: 5em;
+  width: 5em;
   border: solid .5px #8D93BC;
-  margin: 1em;
 }
 
 .min-font {
-  font-size: 1.25em;
-  line-height: 1em;
-  height: 2.18em;
+  font-size: .7em;
 }
 
 .price-font {
-  font-size: 1.18em;
-  line-height: 1em;
-  height: 2.18em;
+  font-size: .7em;
 }
 
 .wrap {
@@ -210,19 +204,26 @@ body, #root {
 
 .absoluta {
   position: absolute;
-  bottom: 9em;
-  border: solid 1px #000000;
-}
+  bottom: 3em;
+  background-color: rgba(255, 255, 255, .5);
+  width: 152%;
+  left: -4em;
 
+}
+.space-e{
+  justify-content: space-evenly;
+}
+.margin-05{
+  margin: .5em;
+}
 /* PRODUCTS END-------------------------------------------------------------- */
 /* SLIDER START-------------------------------------------------------------- */
 .slider {
-  top: 6em;
+  top: 10em;
   width: 100vw;
   height: 60%;
-  background: black;
+  background: rgba(0, 0, 0, .17);
   position: absolute;
-  bottom: 12em;
 }
 
 /* SLIDER END-------------------------------------------------------------- */
