@@ -184,7 +184,9 @@ body, #root {
       -ms-flex-align: end;
           align-items: end;
 }
-
+.just-end{
+  justify-content: flex-end;
+}
 .bg {
   background-color: #FFFFFF;
   height: 5em;
@@ -208,7 +210,7 @@ body, #root {
 .absoluta {
   position: absolute;
   bottom: 3em;
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(255, 255, 255, .9);
   width: 152%;
   left: -4em;
 
@@ -285,7 +287,74 @@ body, #root {
   right: 3em;
 }
 /*  */
+/* modal */
+.modal-contenido{
+  background-color:#ffffff;
+  width: 18.75em;
+  height: 28em;
+  padding: 10px 20px;
+  margin: 15% auto;
+  position: relative;
+}
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+}
+.modal-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 16em;
+}
+#miModal:target{
+  opacity:1;
+  pointer-events:auto;
+}
+.size-modal{
+  height: 10em;
+}
+.agregar{
+  min-width: 10em;
+  left: 4.3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000000;
+  text-align: center;
+  padding: 8px 0;
+  position: absolute;
+  bottom: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.div-modal-producto{
+  position: absolute;
+  top: 6em;
+  left: 5.5em;
+}
+.number-input{
+  width: 5em;
+  height: 2em;
 
+}
+.div-number-input{
+  top: 22em;
+  width: 11em;
+  border: solid 1px;
+  position: absolute;
+  left: 3.5em;
+}
+.p-number{
+  margin: auto;
+}
+/* ------------------------------------------ */
 /* SLIDER END-------------------------------------------------------------- */
 /* FOOTER START-------------------------------------------------------------- */
 .footer {
@@ -307,5 +376,102 @@ body, #root {
   bottom: 0;
 }
 
+@media (min-width: 1281px) {
+  .absoluta {
+    position: absolute;
+    bottom: 3em;
+    background-color: rgba(255, 255, 255, .9);
+    width: 253%;
+    left: -12em;
+  
+  }
+  /* SLIDER START-------------------------------------------------------------- */
+.slider {
+  top: 9.5em;
+  width: 95%;
+  height: 65%;
+  background: rgba(0, 0, 0, .17);
+  position: absolute;
+}
+/* ---------------------------- */
+
+/* modal */
+.modal-contenido{
+    background-color:#ffffff;
+    width: 65em;
+    height: 35em;
+    padding: 10px 20px;
+    margin: 7% auto;
+    position: relative;
+}
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+}
+.modal-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 16em;
+}
+#miModal:target{
+  opacity:1;
+  pointer-events:auto;
+}
+.size-modal{
+  height: 25em;
+}
+.texto-modal{
+  top: 4em;
+  position: absolute;
+  left: 25.5em;
+}
+.agregar{
+  min-width: 12em;
+  left: 47em;
+  display: flex;
+  background-color: #000000;
+  text-align: center;
+  padding: 15px 0;
+  position: absolute;
+  bottom: 4em;
+  justify-content: center;
+}
+.div-modal-producto{
+  position: absolute;
+  top: 4em;
+  left: 4.5em;
+  border: solid 1px #000000;
+  padding: 1em;
+}
+.number-input{
+  width: 5em;
+  height: 2em;
+
+}
+.fz-2{
+  font-size: 2em;
+}
+.fz-1-5{
+  font-size: 1.5em;
+}
+.div-number-input{
+top: 28.4em;
+width: 11em;
+border: solid 1px;
+position: absolute;
+left: 30.5em;
+}
+.p-number{
+  margin: auto;
+}
+/* ------------------------------------------ */
+}
 /* FOOTER END-------------------------------------------------------------- */
 /*# sourceMappingURL=index.css.map */

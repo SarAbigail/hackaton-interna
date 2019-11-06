@@ -56,6 +56,7 @@ const Slider = () => {
         "https://github.com/SarAbigail/hackaton-interna/blob/master/imagenes-db/catalogo/Mesa%20de%20trabajo%2013.png?raw=true"
     },
   ]
+  console.log(index)
   return (
     <React.Fragment>
       
@@ -63,9 +64,8 @@ const Slider = () => {
       <img className="download" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA70lEQVRIS2NkoDFgpLH5DCPMAmN7z/+gID17cDvRPidaIcjgUQsIptgRHkS4vG/s4LmA4T9DPNbwY2RYePbA9gRkOXRz4MkUX/ga23tdYGD4r49qCePFswe3GaBbTJYFBg4BAsz/fz5gYGDghxr48S8ju8KFAxs+UMUCkCGmDl4G//7/Pw9iMzEyGp4+sO0CtmAjywcwg4wcPMDhfe7AjgW40jRFFhDMKFiKE6IimRiDYWrw+QAUYbBIJMVMbGofnj24XQEkAfeBiYOHw///jKCwlafQ9IeMjP8TzhzYcQDFAgoNxamdpPqAHEcMfQsAKb+DGfyVYOgAAAAASUVORK5CYII=" alt=""/>
       <img className="share" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABlklEQVRIS+2UT07CUBDGvwmJuMQbcAMbqlv72FE24gn0CNwAbyBHwBPYFbDz1a1CygmMN9AlxnbMQAttra9VQuLCl3Q38/3mz9ch7PnRnvXxNwG20w0A5pDq7UB7r6Yp/KoD23E5Fg3KILsChGOE7AigBcDHJkglwKnqWmEUnRORAtCMP4RUP6rxuzZBjICW6lwR0yARzC6TFjN/bFmq1zBBCgGW6jRrTHcArFj0BQSPwN4HDoO8c0yQLwAZR8R8D6AB0IIo6j/pqS77IXMQPfMnbcnJANZBy+eVOOE2RL1f5vMEHOdKYRYz/PnDRPaVBdjKHYFxKZXLfMuqLhKX3JAOVFLYpoN47lL9yh0SYCu3RxEcJvQKFu3N/MlFuvK8eKaDE9W9ZuaBjAaAB8ZNsXu2fa1tulyNpUg8A2iduZoIDgC5LY3EPUwY1kD6UY+DRDp9KkziGUB8wOSvlPfGxP25no6K9pACyBozM8/Hb3awTTIniMBPYlMAOcGy4K0DvnPRuttqsZVuUVW7FsX9A0qnt/cRfQKA0ekZk0O/FwAAAABJRU5ErkJggg==" alt=""/>
       <img className="search" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABdElEQVRIS9WVQVLCQBBFfwerXMoR8ASGolwz7ISVnkBvAN4kuQHegJVx5+BWU84NlBvgUktoa0ISJpiZgBqqzG4q6X6/u6d/CDU/VHN+WAG+OGsdLGnIBAHAT4UoYshPj0Ml7163EVcK6Ih+AMbQlYAYwdNDdF0F+QbodAcK4JMkkHDjgYJHeav08VQM/CV4BMZlVlE8jdpOIeZLQ/mbRySyxJsJEhCzBHAEQhjLaGSD5BXonjeYXvSHHlHbljxLlEKe9XlBfGybSQ7I1Vco2qh4nLTLEbMGpL3fRn1JFco2CwPQZx0YT6OddqPTdcftE7C6nj9s0SyeRq2ym7S/Idd+TXV5xqLNPaJexaLdA2huvWhZ/wpWARp7hLBgFYlH8ZXRb7Wgw56Sk7lzBhbLsNsMIQSTSH3LCnHadQM0MpJo2AyEyQIcaGvwxXmzwR/SBdlpqcrKqYL8GqChBQjhIpbRJBPzJ4AcgndhJl/9Ump+/j/gC2Wj7BkTEOL1AAAAAElFTkSuQmCC" alt=""/>
-   
-      
       <input className="rango" min="0" max="13" type="range"/>
+      
     <div className="slider">
       <Gallery index={index} onRequestChange={i => {setIndex(i); }} >
         {images.map(img => (
