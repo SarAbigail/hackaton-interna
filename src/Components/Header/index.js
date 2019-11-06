@@ -10,8 +10,8 @@ class Header extends Component  {
         <div className="cont-logo">
         </div>
         <div className="menu-cart-user">
-        <button className="menu-btn cart"></button>
         <button className="menu-btn user"></button>
+        <button className="menu-btn cart"></button>
         </div>
         </nav>
       </div>
