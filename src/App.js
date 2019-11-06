@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import MainComp from './Components/MainComp';
 
-function App() {
+const App = () => {
   return (
     <Router>
     <Switch>

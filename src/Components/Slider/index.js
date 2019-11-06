@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Gallery, GalleryImage } from "react-gesture-gallery";
-const Slider = () => {
+import { connect } from 'react-redux';
+import selectPage from '../../Actions';
+
+
+const Slider = ({ page }) => {
   const [index, setIndex] = useState(0);
   const images = [
     {
@@ -56,7 +60,8 @@ const Slider = () => {
         "https://github.com/SarAbigail/hackaton-interna/blob/master/imagenes-db/catalogo/Mesa%20de%20trabajo%2013.png?raw=true"
     },
   ]
-  console.log(index)
+  
+  
   return (
     <React.Fragment>
       
@@ -67,7 +72,7 @@ const Slider = () => {
       <input className="rango" min="0" max="13" type="range"/>
       
     <div className="slider">
-      <Gallery index={index} onRequestChange={i => {setIndex(i); }} >
+      <Gallery index={index} onRequestChange={i => {setIndex(i);page(i);}} >
         {images.map(img => (
           <GalleryImage objectFit="contain" key={img.src} src={img.src} />
         ))}
@@ -76,4 +81,11 @@ const Slider = () => {
     </React.Fragment>
   );
 }
-export default Slider;
+
+const matchDispatchToProps = (dispatch) => {  
+    return {
+        page: (index) => {dispatch(selectPage(index))}
+    }
+}
+
+export default connect(null, matchDispatchToProps)(Slider);
